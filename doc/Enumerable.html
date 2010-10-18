@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Module: Enumerable</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/sixarm_ruby_math_statistics_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/sixarm_ruby_math_statistics.rb">lib/sixarm_ruby_math_statistics.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#M000011">#deviation</a></li>
+					
+					<li><a href="#M000004">#mean</a></li>
+					
+					<li><a href="#M000005">#median</a></li>
+					
+					<li><a href="#M000002">#sum</a></li>
+					
+					<li><a href="#M000008">#sum_of_squares</a></li>
+					
+					<li><a href="#M000009">#variance</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./INSTALL_txt.html">INSTALL.txt</a></li>
+				
+					<li class="file"><a href="./LICENSE_txt.html">LICENSE.txt</a></li>
+				
+					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
+				
+					<li class="file"><a href="./sixarm_ruby_math_statistics_gemspec.html">sixarm_ruby_math_statistics.gemspec</a></li>
+				
+					<li class="file"><a href="./sixarm_ruby_math_statistics_sha512_txt.html">sixarm_ruby_math_statistics.sha512.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Enumerable.html">Enumerable</a></li>
+				
+					<li><a href="./MathStatiticsTest.html">MathStatiticsTest</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">Enumerable</h1>
+
+		<div id="description">
+			<h1>SixArm Ruby Gem: MathStatistics</h1>
+<table>
+<tr><td valign="top">Author:</td><td>Joel Parker Henderson, joelparkerhenderson@gmail.com
+
+</td></tr>
+<tr><td valign="top">Copyright:</td><td>Copyright &#169; 2006-2010 Joel Parker Henderson
+
+</td></tr>
+<tr><td valign="top">License:</td><td>CreativeCommons License, Non-commercial Share Alike
+
+</td></tr>
+<tr><td valign="top">License:</td><td>LGPL, GNU Lesser General Public License
+
+</td></tr>
+</table>
+<p>
+Also see <a
+href="http://pallas.telperion.info/ruby-stats">pallas.telperion.info/ruby-stats</a>/
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="deviation-method" class="method-detail ">
+				<a name="M000011"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">deviation</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Examples
+</p>
+<pre>
+  [].deviation =&gt; nil
+  [1].deviation =&gt; 0.0
+  [1,2].deviation =&gt; 0.5
+  [2,2,4,2,2].deviation =&gt; 0.8
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="deviation-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sixarm_ruby_math_statistics.rb, line 91</span>
+91:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">deviation</span> 
+92:   <span class="ruby-identifier">size</span><span class="ruby-operator">==</span><span class="ruby-value">0</span> <span class="ruby-operator">?</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-operator">:</span> <span class="ruby-constant">Math</span><span class="ruby-operator">::</span><span class="ruby-identifier">sqrt</span>(<span class="ruby-identifier">variance</span>)
+93:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="mean-method" class="method-detail ">
+				<a name="M000004"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">mean</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Examples
+</p>
+<pre>
+  [].mean =&gt; nil
+  [1].mean =&gt; 1.0
+  [1,2].mean =&gt; 1.5
+  [1,2,9].mean =&gt; 4.0
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="mean-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sixarm_ruby_math_statistics.rb, line 47</span>
+47:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">mean</span>
+48:   <span class="ruby-identifier">size</span><span class="ruby-operator">==</span><span class="ruby-value">0</span> <span class="ruby-operator">?</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">sum</span>.<span class="ruby-identifier">to_f</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">size</span>
+49:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="median-method" class="method-detail ">
+				<a name="M000005"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">median</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Examples
+</p>
+<pre>
+ [].median =&gt; nil
+ [1].median =&gt; 1.0
+ [1,2].median =&gt; 1.5
+ [1,2,9].mean =&gt; 2.0
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="median-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sixarm_ruby_math_statistics.rb, line 58</span>
+58:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">median</span>
+59:   <span class="ruby-identifier">size</span><span class="ruby-operator">==</span><span class="ruby-value">0</span> <span class="ruby-operator">?</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-operator">:</span> ((<span class="ruby-value">0</span><span class="ruby-operator">==</span><span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">size</span><span class="ruby-operator">%</span><span class="ruby-value">2</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">sort</span>[<span class="ruby-identifier">size</span><span class="ruby-operator">/</span><span class="ruby-value">2</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>,<span class="ruby-value">2</span>].<span class="ruby-identifier">mean</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">sort</span>[<span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">size</span><span class="ruby-operator">/</span><span class="ruby-value">2</span>].<span class="ruby-identifier">to_f</span>)
+60:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="sum-method" class="method-detail ">
+				<a name="M000002"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">sum</span><span
+						class="method-args">(identity = 0, &block)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Examples
+</p>
+<pre>
+  [].sum =&gt; 0
+  [1].sum =&gt; 1
+  [1,2,3].sum =&gt; 5
+</pre>
+<p>
+Example with default for empty
+</p>
+<pre>
+  [].sum(99) =&gt; 99
+</pre>
+<p>
+Example with block
+</p>
+<pre>
+  [1,2,3].sum{|x| x*2} =&gt; 10
+</pre>
+<p>
+This method is copied from rails to ensure compatibility.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="sum-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sixarm_ruby_math_statistics.rb, line 31</span>
+31:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">sum</span>(<span class="ruby-identifier">identity</span> = <span class="ruby-value">0</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
+32:     <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">identity</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">size</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+33:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">block_given?</span>
+34:       <span class="ruby-identifier">map</span>(<span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>).<span class="ruby-identifier">sum</span>
+35:     <span class="ruby-keyword kw">else</span>
+36:       <span class="ruby-identifier">inject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">sum</span>, <span class="ruby-identifier">element</span><span class="ruby-operator">|</span> <span class="ruby-identifier">sum</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">element</span> }
+37:     <span class="ruby-keyword kw">end</span>
+38:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="sum-of-squares-method" class="method-detail ">
+				<a name="M000008"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">sum_of_squares</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Examples
+</p>
+<pre>
+ [].sum_of_squares =&gt; 0
+ [1].sum_of_squares =&gt; 1.0
+ [1,2].sum_of_squares =&gt; 5.0
+ [1,2,3].sum_of_squares =&gt; 14.0
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="sum-of-squares-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sixarm_ruby_math_statistics.rb, line 69</span>
+69:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">sum_of_squares</span> 
+70:   <span class="ruby-identifier">size</span><span class="ruby-operator">==</span><span class="ruby-value">0</span> <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">inject</span>(<span class="ruby-value">0</span>){<span class="ruby-operator">|</span><span class="ruby-identifier">sum</span>,<span class="ruby-identifier">x</span><span class="ruby-operator">|</span><span class="ruby-identifier">sum</span><span class="ruby-operator">+</span>(<span class="ruby-identifier">x</span><span class="ruby-operator">*</span><span class="ruby-identifier">x</span>)}
+71:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="variance-method" class="method-detail ">
+				<a name="M000009"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">variance</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Examples
+</p>
+<pre>
+  [].variance =&gt; nil
+  [1].variance =&gt;  0.0
+  [1,2].variance =&gt; 0.25
+  [1,2,3,4].variance =&gt; 1.25
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="variance-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sixarm_ruby_math_statistics.rb, line 80</span>
+80:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">variance</span>
+81:   <span class="ruby-identifier">size</span><span class="ruby-operator">==</span><span class="ruby-value">0</span> <span class="ruby-operator">?</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-operator">:</span> ( <span class="ruby-identifier">m</span>=<span class="ruby-identifier">mean</span> <span class="ruby-keyword kw">and</span> <span class="ruby-identifier">sum_of_squares</span>.<span class="ruby-identifier">to_f</span><span class="ruby-operator">/</span><span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">m</span><span class="ruby-operator">*</span><span class="ruby-identifier">m</span> )
+82:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

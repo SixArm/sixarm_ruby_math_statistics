@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: MathStatiticsTest</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./test/sixarm_ruby_math_statistics_test_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="test/sixarm_ruby_math_statistics_test.rb">test/sixarm_ruby_math_statistics_test.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Test::Unit::TestCase</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#M000010">#test_deviation</a></li>
+					
+					<li><a href="#M000001">#test_mean</a></li>
+					
+					<li><a href="#M000003">#test_median</a></li>
+					
+					<li><a href="#M000000">#test_sum</a></li>
+					
+					<li><a href="#M000006">#test_sum_of_squares</a></li>
+					
+					<li><a href="#M000007">#test_variance</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./INSTALL_txt.html">INSTALL.txt</a></li>
+				
+					<li class="file"><a href="./LICENSE_txt.html">LICENSE.txt</a></li>
+				
+					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
+				
+					<li class="file"><a href="./sixarm_ruby_math_statistics_gemspec.html">sixarm_ruby_math_statistics.gemspec</a></li>
+				
+					<li class="file"><a href="./sixarm_ruby_math_statistics_sha512_txt.html">sixarm_ruby_math_statistics.sha512.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Enumerable.html">Enumerable</a></li>
+				
+					<li><a href="./MathStatiticsTest.html">MathStatiticsTest</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">MathStatiticsTest</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="test-deviation-method" class="method-detail ">
+				<a name="M000010"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_deviation</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-deviation-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/sixarm_ruby_math_statistics_test.rb, line 40</span>
+40:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_deviation</span>
+41:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword kw">nil</span>,[].<span class="ruby-identifier">deviation</span>)
+42:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">0</span><span class="ruby-value">.0</span>,[<span class="ruby-value">1</span>].<span class="ruby-identifier">deviation</span>)
+43:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">0</span><span class="ruby-value">.5</span>,[<span class="ruby-value">1</span>,<span class="ruby-value">2</span>].<span class="ruby-identifier">deviation</span>)
+44:   <span class="ruby-identifier">assert_in_delta</span>(<span class="ruby-value">0</span><span class="ruby-value">.8</span>,[<span class="ruby-value">2</span>,<span class="ruby-value">2</span>,<span class="ruby-value">4</span>,<span class="ruby-value">2</span>,<span class="ruby-value">2</span>].<span class="ruby-identifier">deviation</span>,<span class="ruby-value">0</span><span class="ruby-value">.001</span>)
+45:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="test-mean-method" class="method-detail ">
+				<a name="M000001"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_mean</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-mean-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/sixarm_ruby_math_statistics_test.rb, line 12</span>
+12:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_mean</span>
+13:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword kw">nil</span>,[].<span class="ruby-identifier">mean</span>)
+14:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">1.0</span>,[<span class="ruby-value">1</span>].<span class="ruby-identifier">mean</span>)
+15:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">1.5</span>,[<span class="ruby-value">1</span>,<span class="ruby-value">2</span>].<span class="ruby-identifier">mean</span>)
+16:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">4.0</span>,[<span class="ruby-value">1</span>,<span class="ruby-value">2</span>,<span class="ruby-value">9</span>].<span class="ruby-identifier">mean</span>)
+17:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="test-median-method" class="method-detail ">
+				<a name="M000003"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_median</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-median-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/sixarm_ruby_math_statistics_test.rb, line 19</span>
+19:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_median</span>
+20:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword kw">nil</span>,[].<span class="ruby-identifier">median</span>)
+21:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">1.0</span>,[<span class="ruby-value">1</span>].<span class="ruby-identifier">median</span>)
+22:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">1.5</span>,[<span class="ruby-value">1</span>,<span class="ruby-value">2</span>].<span class="ruby-identifier">median</span>)
+23:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">2.0</span>,[<span class="ruby-value">1</span>,<span class="ruby-value">2</span>,<span class="ruby-value">9</span>].<span class="ruby-identifier">median</span>)
+24:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="test-sum-method" class="method-detail ">
+				<a name="M000000"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_sum</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-sum-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/sixarm_ruby_math_statistics_test.rb, line 6</span>
+ 6:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_sum</span>
+ 7:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">0</span>,[].<span class="ruby-identifier">sum</span>)
+ 8:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">1</span>,[<span class="ruby-value">1</span>].<span class="ruby-identifier">sum</span>)
+ 9:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">6</span>,[<span class="ruby-value">1</span>,<span class="ruby-value">2</span>,<span class="ruby-value">3</span>].<span class="ruby-identifier">sum</span>)
+10:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="test-sum-of-squares-method" class="method-detail ">
+				<a name="M000006"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_sum_of_squares</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-sum-of-squares-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/sixarm_ruby_math_statistics_test.rb, line 26</span>
+26:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_sum_of_squares</span>
+27:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">0</span>,[].<span class="ruby-identifier">sum_of_squares</span>)
+28:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">1.0</span>,[<span class="ruby-value">1</span>].<span class="ruby-identifier">sum_of_squares</span>)
+29:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">5.0</span>,[<span class="ruby-value">1</span>,<span class="ruby-value">2</span>].<span class="ruby-identifier">sum_of_squares</span>)
+30:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">14.0</span>,[<span class="ruby-value">1</span>,<span class="ruby-value">2</span>,<span class="ruby-value">3</span>].<span class="ruby-identifier">sum_of_squares</span>)
+31:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="test-variance-method" class="method-detail ">
+				<a name="M000007"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_variance</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-variance-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/sixarm_ruby_math_statistics_test.rb, line 33</span>
+33:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_variance</span>
+34:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword kw">nil</span>,[].<span class="ruby-identifier">variance</span>)
+35:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">0</span><span class="ruby-value">.0</span>,[<span class="ruby-value">1</span>].<span class="ruby-identifier">variance</span>)
+36:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">0</span><span class="ruby-value">.25</span>,[<span class="ruby-value">1</span>,<span class="ruby-value">2</span>].<span class="ruby-identifier">variance</span>)
+37:   <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">1.25</span>,[<span class="ruby-value">1</span>,<span class="ruby-value">2</span>,<span class="ruby-value">3</span>,<span class="ruby-value">4</span>].<span class="ruby-identifier">variance</span>)
+38:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+
