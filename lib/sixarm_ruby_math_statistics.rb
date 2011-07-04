@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 =begin rdoc
 
 = SixArm Ruby Gem: MathStatistics
@@ -66,7 +68,7 @@ module Enumerable
  #  [1,2].sum_of_squares => 5.0
  #  [1,2,3].sum_of_squares => 14.0
 
- def sum_of_squares 
+ def sum_of_squares
   size==0 ? 0 : inject(0){|sum,x|sum+(x*x)}
  end
 
@@ -76,19 +78,19 @@ module Enumerable
  #   [1].variance =>  0.0
  #   [1,2].variance => 0.25
  #   [1,2,3,4].variance => 1.25
-   
+
  def variance
   size==0 ? nil : ( m=mean and sum_of_squares.to_f/size - m*m )
  end
 
- 
+
  # Examples
  #   [].deviation => nil
  #   [1].deviation => 0.0
  #   [1,2].deviation => 0.5
  #   [2,2,4,2,2].deviation => 0.8
 
- def deviation 
+ def deviation
   size==0 ? nil : Math::sqrt(variance)
  end
 
