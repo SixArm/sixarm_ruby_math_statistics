@@ -1,0 +1,1 @@
+cd37f64ea2768b5f219ee8fc564aa45ebd073bb9e19e5dee68ee315dc4c33a681f97cd487eaaf8a47aac96a15684662aea1c9ea230123d5acc5e47d8124f5fc1  sixarm_ruby_math_statistics-1.1.8.gem
