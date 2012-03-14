@@ -1,16 +1,5 @@
 # -*- coding: utf-8 -*-
-
 =begin rdoc
-
-= SixArm Ruby Gem: MathStatistics
-
-Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
-Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
-License:: CreativeCommons License, Non-commercial Share Alike
-License:: LGPL, GNU Lesser General Public License
-
-Also see http://pallas.telperion.info/ruby-stats/
-
 =end
 
 
