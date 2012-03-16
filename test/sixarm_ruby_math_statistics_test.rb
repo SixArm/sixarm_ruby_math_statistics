@@ -1,50 +1,129 @@
+# -*- coding: utf-8 -*-
+require 'minitest/autorun'
 require 'simplecov'
 SimpleCov.start
-require 'test/unit'
 require 'sixarm_ruby_math_statistics'
 
-class MathStatiticsTest < Test::Unit::TestCase
+describe Enumerable do
 
- def test_sum
-  assert_equal(0,[].sum)
-  assert_equal(1,[1].sum)
-  assert_equal(6,[1,2,3].sum)
- end
+  describe "#sum" do
 
- def test_mean
-  assert_equal(nil,[].mean)
-  assert_equal(1.0,[1].mean)
-  assert_equal(1.5,[1,2].mean)
-  assert_equal(4.0,[1,2,9].mean)
- end
+    it "[] => 0, which tests edge case" do
+      [].sum.must_equal 0
+    end
 
- def test_median
-  assert_equal(nil,[].median)
-  assert_equal(1.0,[1].median)
-  assert_equal(1.5,[1,2].median)
-  assert_equal(2.0,[1,2,9].median)
- end
+    it "[1] => 1, which tests minimal case" do
+      [1].sum.must_equal 1
+    end
 
- def test_sum_of_squares
-  assert_equal(0,[].sum_of_squares)
-  assert_equal(1.0,[1].sum_of_squares)
-  assert_equal(5.0,[1,2].sum_of_squares)
-  assert_equal(14.0,[1,2,3].sum_of_squares)
- end
+    it "[1, 2] => 3, which tests a couple args" do
+      [1, 2].sum.must_equal 3
+    end
 
- def test_variance
-  assert_equal(nil,[].variance)
-  assert_equal(0.0,[1].variance)
-  assert_equal(0.25,[1,2].variance)
-  assert_equal(1.25,[1,2,3,4].variance)
- end
+    it "[1, 2, 3] => 6, which tests a few args" do
+      [1,2,3].sum.must_equal 6
+    end
 
- def test_deviation
-  assert_equal(nil,[].deviation)
-  assert_equal(0.0,[1].deviation)
-  assert_equal(0.5,[1,2].deviation)
-  assert_in_delta(0.8,[2,2,4,2,2].deviation,0.001)
- end
+  end
+
+  describe "#mean" do
+
+    it "[] => nil, which tests edge case" do
+      [].mean.must_equal nil
+    end
+
+    it "[1] => 1.0, which tests minimal case" do
+      [1].mean.must_equal 1.0
+    end
+
+    it "[1, 2] => 1.5, which tests a couple args" do
+      [1,2].mean.must_equal 1.5
+    end
+
+    it "[1, 2, 9] => 4.0, which tests a few args and distinguishes mean and median" do
+      [1,2,9].mean.must_equal 4.0
+    end
+
+  end
+
+  describe "#median" do
+
+    it "[] => nil, which tests edge case" do
+      [].median.must_equal nil
+    end
+
+    it "[1] => 1.0, which tests minimal case" do
+      [1].median.must_equal 1.0
+    end
+
+    it "[1, 2] => 1.5, which tests a couple args" do
+      [1,2].median.must_equal 1.5
+    end
+
+    it "[1, 2, 9] => 2.0, which tests a few args and distiguishes mean from median" do
+      [1,2,9].median.must_equal 2.0
+    end
+
+  end
+
+  describe "#sum_of_squares" do
+
+    it "[] => 0, which tests edge case" do
+      [].sum_of_squares.must_equal []
+    end
+
+    it "[1] => 1.0, which tests minimal case" do
+      [1].sum_of_squares.must_equal 1.0
+    end
+
+    it "[1, 2] => 5.0, which tests a couple args" do
+      [1,2].sum_of_squares.must_equal 5.0
+    end
+
+    it "[1,2,3] => 14.0, which tests few args" do
+      [1,2,3].sum_of_squares.must_equal 14.0
+    end
+
+  end
+
+  describe "#variance" do
+
+    it "[] => 0, which tests edge case" do
+      [].variance.must_equal nil
+    end
+
+   it "[1] => 0, which tests minimal case" do
+      [1].variance.must_equal 0.0
+    end
+
+   it "[1, 2] => 0.25, which tests a couple args" do
+      [1,2].variance.must_equal 0.25
+    end
+
+    it "[1,2,3,4] => 1.25, which tests a few args" do
+      [1,2,3,4].variance.must_equal 1.25
+    end
+
+  end
+
+  describe "#deviation" do
+
+    it "[] => 0, which tests edge case" do
+      [].deviation.must_equal 0
+    end
+
+   it "[1] => 0, which tests minimal case" do
+      [1].deviation.must_equal 0.0
+    end
+
+    it "[1, 2] => 0.25, which tests a couple args" do
+      [1,2].deviation.must_equal 0.5
+    end
+
+    it "[2, 2, 4, 2, 2] => 0.8 with delta 0.001, which tests a small delta" do
+      [2,2,4,2,2].deviation.must_equal 0.8 # TODO delta 0.001
+    end
+
+  end
 
 end
-
