@@ -69,7 +69,7 @@ describe Enumerable do
   describe "#sum_of_squares" do
 
     it "[] => 0, which tests edge case" do
-      [].sum_of_squares.must_equal []
+      [].sum_of_squares.must_equal 0
     end
 
     it "[1] => 1.0, which tests minimal case" do
@@ -88,7 +88,7 @@ describe Enumerable do
 
   describe "#variance" do
 
-    it "[] => 0, which tests edge case" do
+    it "[] => nil, which tests edge case" do
       [].variance.must_equal nil
     end
 
@@ -108,8 +108,8 @@ describe Enumerable do
 
   describe "#deviation" do
 
-    it "[] => 0, which tests edge case" do
-      [].deviation.must_equal 0
+    it "[] => nil, which tests edge case" do
+      [].deviation.must_equal nil
     end
 
    it "[1] => 0, which tests minimal case" do
@@ -121,7 +121,7 @@ describe Enumerable do
     end
 
     it "[2, 2, 4, 2, 2] => 0.8 with delta 0.001, which tests a small delta" do
-      [2,2,4,2,2].deviation.must_equal 0.8 # TODO delta 0.001
+      [2,2,4,2,2].deviation.must_be_within_delta 0.8, 0.001
     end
 
   end
