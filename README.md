@@ -1,6 +1,7 @@
 # SixArm.com » Ruby » <br> Math Statistics
 
-* Docs: <http://sixarm.com/sixarm_ruby_math_statistics/doc>
+* Doc: <http://sixarm.com/sixarm_ruby_math_statistics/doc>
+* Gem: <http://rubygems.org/gems/sixarm_ruby_math_statistics>
 * Repo: <http://github.com/sixarm/sixarm_ruby_math_statistics>
 * Email: Joel Parker Henderson, <joel@sixarm.com>
 
