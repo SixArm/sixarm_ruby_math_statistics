@@ -1,4 +1,4 @@
-# SixArm.com » Ruby » <br> Math Statistics
+# Ruby » <br> Math Statistics
 
 * Doc: <http://sixarm.com/sixarm_ruby_math_statistics/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_math_statistics>
