@@ -53,8 +53,3 @@ To install with high security:
     [1,2].mean => 1.5
     [1,2].variance => 0.25
     [1,2].deviation => 0.5
-
-
-## Changes
-
-* 2012-03-14 1.1.0 Update docs, tests
