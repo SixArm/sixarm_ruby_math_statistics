@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version        = "1.2.2"
 
   s.author         = "SixArm"
-  s.email          =  "sixarm@sixarm.com"
+  s.email          = "sixarm@sixarm.com"
   s.homepage       = "http://sixarm.com/"
   s.licenses       = ["BSD", "GPL", "MIT", "PAL", "Various"]
 

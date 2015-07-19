@@ -1,8 +1,20 @@
-# Ruby » <br> Math Statistics
+# SixArm.com » Ruby » <br> Math Statistics
 
+<!--HEADER-OPEN-->
+
+[![Gem Version](https://badge.fury.io/rb/sixarm_ruby_math_statistics.svg)](http://badge.fury.io/rb/sixarm_ruby_math_statistics)
+[![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_math_statistics.png)](https://travis-ci.org/SixArm/sixarm_ruby_math_statistics)
+[![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_math_statistics.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_math_statistics)
+[![Coverage Status](https://coveralls.io/repos/SixArm/sixarm_ruby_math_statistics/badge.svg?branch=master&service=github)](https://coveralls.io/github/SixArm/sixarm_ruby_math_statistics?branch=master)
+
+* Git: <https://github.com/sixarm/sixarm_ruby_math_statistics>
 * Doc: <http://sixarm.com/sixarm_ruby_math_statistics/doc>
-* Gem: <http://rubygems.org/gems/sixarm_ruby_math_statistics>
-* Repo: <http://github.com/sixarm/sixarm_ruby_math_statistics>
+* Gem: <https://rubygems.org/gems/sixarm_ruby_math_statistics>
+* Contact: Joel Parker Henderson, <joel@sixarm.com>
+* Changes: See CHANGES.md file.
+* License: See LICENSE.md file.
+* Helping: See CONTRIBUTING.md file.
+
 <!--HEADER-SHUT-->
 
 
