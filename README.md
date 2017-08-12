@@ -20,7 +20,7 @@
 
 ## Introduction
 
-Math statistics methods.
+Math statistics methods: sum, mean, median, variance, deviation.
 
 See http://pallas.telperion.info/ruby-stats/
 
@@ -57,8 +57,8 @@ To require the gem in your code:
 ## Examples
 
     require "sixarm_ruby_math_statistics"
-    [1,2].sum => 3
-    [1,2].mean => 1.5
-    [1,2].mean => 1.5
-    [1,2].variance => 0.25
-    [1,2].deviation => 0.5
+	[2, 4, 8].sum => 14
+    [2, 4, 8].mean => 4.666
+    [2, 4, 8].median => 4.0
+    [2, 4, 8].variance => 6.222
+    [2, 4, 8].deviation => 2.494
