@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
 
   s.name           = "sixarm_ruby_math_statistics"
-  s.summary        = "SixArm.com » Ruby » Math statitics"
+  s.summary        = "SixArm.com → Ruby → Math statitics"
   s.description    = "Math statitics methods for sum, mean, median, mode, variance, deviation, etc."
   s.version        = "1.2.2"
 
