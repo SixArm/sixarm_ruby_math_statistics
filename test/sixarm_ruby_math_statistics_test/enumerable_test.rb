@@ -26,7 +26,7 @@ describe Enumerable do
   describe "#mean" do
 
     it "[] => nil, which tests edge case" do
-      [].mean.must_equal nil
+      [].mean.must_be_nil
     end
 
     it "[1] => 1.0, which tests minimal case" do
@@ -46,7 +46,7 @@ describe Enumerable do
   describe "#median" do
 
     it "[] => nil, which tests edge case" do
-      [].median.must_equal nil
+      [].median.must_be_nil
     end
 
     it "[1] => 1.0, which tests minimal case" do
@@ -86,7 +86,7 @@ describe Enumerable do
   describe "#variance" do
 
     it "[] => nil, which tests edge case" do
-      [].variance.must_equal nil
+      [].variance.must_be_nil
     end
 
    it "[1] => 0, which tests minimal case" do
@@ -106,7 +106,7 @@ describe Enumerable do
   describe "#deviation" do
 
     it "[] => nil, which tests edge case" do
-      [].deviation.must_equal nil
+      [].deviation.must_be_nil
     end
 
    it "[1] => 0, which tests minimal case" do
