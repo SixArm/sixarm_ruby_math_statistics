@@ -4,9 +4,9 @@
 
 [![Gem Version](https://badge.fury.io/rb/sixarm_ruby_math_statistics.svg)](http://badge.fury.io/rb/sixarm_ruby_math_statistics)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_math_statistics.png)](https://travis-ci.org/SixArm/sixarm_ruby_math_statistics)
-[![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/b25b2e763fed64185846/maintainability)](https://codeclimate.com/github/SixArm/sixarm_ruby_math_statistics/maintainability)
+[![Code Climate](https://api.codeclimate.com/v1/badges/b25b2e763fed64185846/maintainability)](https://codeclimate.com/github/SixArm/sixarm_ruby_math_statistics/maintainability)
 
-* Git: <https://github.com/sixarm/sixarm_ruby_math_statistics>
+* Git: <https://github.com/SixArm/sixarm_ruby_math_statistics>
 * Doc: <http://sixarm.com/sixarm_ruby_math_statistics/doc>
 * Gem: <https://rubygems.org/gems/sixarm_ruby_math_statistics>
 * Contact: Joel Parker Henderson, <joel@sixarm.com>
@@ -32,11 +32,13 @@ Want to help? We're happy to get pull requests.
 
 ### Gem
 
-Run this command in your shell or terminal:
+To install this gem in your shell or terminal:
 
     gem install sixarm_ruby_math_statistics
 
-Or add this to your Gemfile:
+### Gemfile
+
+To add this gem to your Gemfile:
 
     gem 'sixarm_ruby_math_statistics'
 
